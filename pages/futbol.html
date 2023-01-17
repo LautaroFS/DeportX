@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Deport X</title>
+</head>
+
+<body>
+    <!-- NAVEGADOR -->
+    <nav>
+        <div class="lt">
+            <img class="logo"
+                src="data:image/png;base64,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"
+                alt="">
+            <h1 class="title">X DEPORT</h1>
+        </div>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./tenis.html">TENIS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="./futbol.html">FUTBOL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./padel.html">PADEL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./natacion.html">NATACION</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <ul>
+                <li><a href="">POLITICAS</a></li>
+                <li><a href="">ENVIOS</a></li>
+                <li><a href="">MEDIOS DE PAGO</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="">
+                <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" class="map" alt="">
+            </a>
+        </div>
+        <div>
+            <img src="https://edit.org/photos/editor/json/2021/09/09/4/8/482c0687f57d11943599df75f4effdde_edit.org.jpg-376.jpg"
+                class="tarjetas" alt="">
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</html>
